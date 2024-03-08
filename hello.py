@@ -1,8 +1,4 @@
 import torch
-import numpy as np
-import pandas as pd
-import sklearn
-import matplotlib.pyplot as plt
 
 print(f"PyTorch version: {torch.__version__}")
 

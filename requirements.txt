@@ -25,7 +25,11 @@ argon2-cffi-bindings==21.2.0
 arrow==1.3.0
     # via isoduration
 asttokens==2.4.1
-    # via stack-data
+    # via
+    #   nbdev
+    #   stack-data
+astunparse==1.6.3
+    # via nbdev
 async-lru==2.0.4
     # via jupyterlab
 attrs==23.2.0
@@ -53,6 +57,8 @@ certifi==2024.2.2
     #   requests
 cffi==1.16.0
     # via argon2-cffi-bindings
+cfgv==3.4.0
+    # via pre-commit
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
@@ -90,6 +96,10 @@ dill==0.3.8
     # via
     #   datasets
     #   multiprocess
+distlib==0.3.8
+    # via virtualenv
+execnb==0.1.5
+    # via nbdev
 executing==2.0.1
     # via stack-data
 fastai==2.7.14
@@ -98,8 +108,11 @@ fastbook==0.0.29
     # via -r requirements.in
 fastcore==1.5.29
     # via
+    #   execnb
     #   fastai
     #   fastdownload
+    #   ghapi
+    #   nbdev
 fastdownload==0.0.7
     # via fastai
 fastjsonschema==2.19.1
@@ -114,6 +127,7 @@ filelock==3.13.1
     #   huggingface-hub
     #   torch
     #   transformers
+    #   virtualenv
 fonttools==4.49.0
     # via matplotlib
 fqdn==1.5.1
@@ -127,6 +141,8 @@ fsspec[http]==2024.2.0
     #   datasets
     #   huggingface-hub
     #   torch
+ghapi==1.0.4
+    # via nbdev
 graphviz==0.20.1
     # via fastbook
 h11==0.14.0
@@ -142,6 +158,8 @@ huggingface-hub==0.21.4
     #   datasets
     #   tokenizers
     #   transformers
+identify==2.5.35
+    # via pre-commit
 idna==3.6
     # via
     #   anyio
@@ -160,6 +178,7 @@ ipykernel==6.29.3
 ipython==8.22.2
     # via
     #   -r requirements.in
+    #   execnb
     #   ipdb
     #   ipykernel
     #   ipywidgets
@@ -170,6 +189,7 @@ ipywidgets==7.8.1
     # via
     #   fastbook
     #   jupyter
+    #   nbdev
 isoduration==20.11.0
     # via jsonschema
 jedi==0.19.1
@@ -230,7 +250,7 @@ jupyter-server==2.13.0
     #   notebook-shim
 jupyter-server-terminals==0.5.2
     # via jupyter-server
-jupyterlab==4.1.3
+jupyterlab==4.1.4
     # via notebook
 jupyterlab-pygments==0.3.0
     # via nbconvert
@@ -277,6 +297,8 @@ nbconvert==7.16.2
     # via
     #   jupyter
     #   jupyter-server
+nbdev==2.3.13
+    # via -r requirements.in
 nbformat==5.9.2
     # via
     #   jupyter-server
@@ -286,6 +308,8 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.2.1
     # via torch
+nodeenv==1.8.0
+    # via pre-commit
 notebook==7.1.1
     # via
     #   jupyter
@@ -318,6 +342,7 @@ packaging==23.2
     #   fastai
     #   fastbook
     #   fastcore
+    #   ghapi
     #   huggingface-hub
     #   ipykernel
     #   jupyter-server
@@ -349,7 +374,11 @@ pillow==10.2.0
     #   matplotlib
     #   torchvision
 platformdirs==4.2.0
-    # via jupyter-core
+    # via
+    #   jupyter-core
+    #   virtualenv
+pre-commit==3.6.2
+    # via -r requirements.in
 preshed==3.0.9
     # via
     #   spacy
@@ -368,7 +397,7 @@ ptyprocess==0.7.0
     #   terminado
 pure-eval==0.2.2
     # via stack-data
-pyarrow==15.0.0
+pyarrow==15.0.1
     # via datasets
 pyarrow-hotfix==0.6
     # via datasets
@@ -406,6 +435,8 @@ pyyaml==6.0.1
     #   fastai
     #   huggingface-hub
     #   jupyter-events
+    #   nbdev
+    #   pre-commit
     #   transformers
 pyzmq==25.1.2
     # via
@@ -447,6 +478,8 @@ rpds-py==0.18.0
     # via
     #   jsonschema
     #   referencing
+ruff==0.3.1
+    # via -r requirements.in
 safetensors==0.4.2
     # via transformers
 scikit-learn==1.4.1.post1
@@ -467,6 +500,7 @@ sentencepiece==0.2.0
 six==1.16.0
     # via
     #   asttokens
+    #   astunparse
     #   bleach
     #   python-dateutil
     #   rfc3339-validator
@@ -572,11 +606,15 @@ uri-template==1.3.0
     # via jsonschema
 urllib3==2.2.1
     # via requests
+virtualenv==20.25.1
+    # via pre-commit
 wasabi==1.1.2
     # via
     #   spacy
     #   thinc
     #   weasel
+watchdog==4.0.0
+    # via nbdev
 wcwidth==0.2.13
     # via prompt-toolkit
 weasel==0.3.4
@@ -589,6 +627,8 @@ webencodings==0.5.1
     #   tinycss2
 websocket-client==1.7.0
     # via jupyter-server
+wheel==0.42.0
+    # via astunparse
 widgetsnbextension==3.6.6
     # via ipywidgets
 xxhash==3.4.1

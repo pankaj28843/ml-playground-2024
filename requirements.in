@@ -2,7 +2,10 @@ fastbook
 ipdb
 ipython
 jupyter
+nbdev
 numpy
+pre-commit
+ruff
 scikit-learn
 scipy
 seaborn
