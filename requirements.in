@@ -1,0 +1,12 @@
+fastbook
+ipdb
+ipython
+jupyter
+numpy
+scikit-learn
+scipy
+seaborn
+torch
+torchaudio
+torchvision
+httpx
