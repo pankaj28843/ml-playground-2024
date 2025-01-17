@@ -1,9 +1,12 @@
 fastbook
+httpx
 ipdb
 ipython
 jupyter
 nbdev
 numpy
+pip
+pip-tools
 pre-commit
 ruff
 scikit-learn
@@ -12,4 +15,3 @@ seaborn
 torch
 torchaudio
 torchvision
-httpx
